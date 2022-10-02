@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using WebApiDockerExample.Domain.Commands.v1.DeleteUser;
 
-namespace WebApiDockerExample.Domain.Handler.DeleteUser
+namespace WebApiDockerExample.Domain.Handlers.DeleteUser
 {
     public class DeleteHandler : IRequestHandler<DeleteUserCommand, DeleteUserResult>
     {

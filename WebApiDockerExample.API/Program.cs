@@ -1,14 +1,10 @@
 using MediatR;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
-using Microsoft.Extensions.Options;
-using System.Reflection;
-using WebApiDockerExample.Domain.Handler.DeleteUser;
-using WebApiDockerExample.Domain.Handler.GetAllUsers;
-using WebApiDockerExample.Domain.Handler.GetUserById;
-using WebApiDockerExample.Domain.Handler.NewUser;
-using WebApiDockerExample.Domain.Handler.UpdateUser;
+using WebApiDockerExample.Domain.Handlers.DeleteUser;
+using WebApiDockerExample.Domain.Handlers.GetAllUsers;
+using WebApiDockerExample.Domain.Handlers.GetUserById;
+using WebApiDockerExample.Domain.Handlers.NewUser;
+using WebApiDockerExample.Domain.Handlers.UpdateUser;
 
 var builder = WebApplication.CreateBuilder(args);
 

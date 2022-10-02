@@ -4,6 +4,6 @@ namespace WebApiDockerExample.Domain.Commands.v1.GetAllUsers
 {
     public class GetAllUsersResult : ResponseBase
     {
-        public List<User>? Users { get; set; }
+        public IList<User>? Users { get; set; }
     }
 }

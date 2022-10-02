@@ -10,5 +10,8 @@ namespace WebApiDockerExample.Domain.Commands.v1.NewUser
         
         [Required]
         public string? Email { get; set; }
+
+        public DateTime? Birthdate { get; set; }
+
     }
 }

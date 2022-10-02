@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using WebApiDockerExample.Domain.Commands.v1.UpdateUser;
 
-namespace WebApiDockerExample.Domain.Handler.UpdateUser
+namespace WebApiDockerExample.Domain.Handlers.UpdateUser
 {
     public class UpdateUserhandler : IRequestHandler<UpdateUserCommand, UpdateUserResult>
     {

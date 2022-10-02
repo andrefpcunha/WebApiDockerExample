@@ -2,7 +2,7 @@
 using WebApiDockerExample.Domain.Commands.v1.GetUserById;
 using WebApiDockerExample.Domain.Models;
 
-namespace WebApiDockerExample.Domain.Handler.GetUserById
+namespace WebApiDockerExample.Domain.Handlers.GetUserById
 {
     public class GetUserByIdHandler : IRequestHandler<GetUserByIdCommand, GetUserByIdResult>
     {
@@ -16,7 +16,8 @@ namespace WebApiDockerExample.Domain.Handler.GetUserById
                 {
                     Id = 1,
                     Name = "André Cunha",
-                    Email = "andre.cunha@email.com"
+                    Email = "andre.cunha@email.com",
+                    Birthdate = new DateTime(1985, 8, 8).ToString("yyyy-MM-dd")
                 }
             };
         }

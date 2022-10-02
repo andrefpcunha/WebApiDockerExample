@@ -2,7 +2,7 @@
 using WebApiDockerExample.Domain.Commands.v1.GetAllUsers;
 using WebApiDockerExample.Domain.Models;
 
-namespace WebApiDockerExample.Domain.Handler.GetAllUsers
+namespace WebApiDockerExample.Domain.Handlers.GetAllUsers
 {
     public class GetAllUsersHandler : IRequestHandler<GetAllUsersCommand, GetAllUsersResult>
     {
@@ -17,13 +17,15 @@ namespace WebApiDockerExample.Domain.Handler.GetAllUsers
                     {
                         Id = 1,
                         Name = "André Cunha",
-                        Email = "andre.cunha@email.com"
+                        Email = "andre.cunha@email.com",
+                        Birthdate = new DateTime(1985,8,8).ToString("yyyy-MM-dd")
                     },
                     new User
                     {
                         Id = 2,
                         Name = "User Name",
-                        Email = "user.name@email.com"
+                        Email = "user.name@email.com",
+                        Birthdate = new DateTime(2000,12,31).ToString("yyyy-MM-dd")
                     }
                 }
             };

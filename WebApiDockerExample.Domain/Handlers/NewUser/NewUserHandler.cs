@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using WebApiDockerExample.Domain.Commands.v1.NewUser;
 
-namespace WebApiDockerExample.Domain.Handler.NewUser
+namespace WebApiDockerExample.Domain.Handlers.NewUser
 {
     public class NewUserHandler : IRequestHandler<NewUserCommand, NewUserResult>
     {
