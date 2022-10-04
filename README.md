@@ -1,8 +1,6 @@
 # WebApiDockerExample
 ## CRUD API example with Mediator Design Partner, Docker, DotNet 6 and Database
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 [![.NET](https://github.com/andrefpcunha/WebApiDockerExample/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/andrefpcunha/WebApiDockerExample/actions/workflows/main.yml)
 
 ## About the project
