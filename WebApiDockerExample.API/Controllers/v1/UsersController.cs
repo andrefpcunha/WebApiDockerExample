@@ -82,12 +82,13 @@ namespace WebApiDockerExample.API.Controllers.v1
         ///// Updating a User
         ///// </summary>
         ///// <returns>User updated successfully</returns>
-        [HttpPut()]
+        [HttpPut("{id}")]
         [ProducesResponseType(typeof(UpdateUserResult), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> Update([FromBody] UpdateUserCommand command, CancellationToken cancellationToken)
+        public async Task<ActionResult> Update([Required] int id, [FromBody] UpdateUserCommand command, CancellationToken cancellationToken)
         {
             Logger.LogInformation("Updating the User");
+            command.Id = id;
             var response = await Mediator.Send(command, cancellationToken);
             return Ok(response);
         }
